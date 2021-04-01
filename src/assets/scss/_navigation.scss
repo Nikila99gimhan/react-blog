@@ -6,12 +6,35 @@
   justify-content: space-around;
   color: $test-color;
 
-  span {
+  .menu_title {
     font-size: 22px;
     font-weight: 400;
     display: flex;
     align-items: center;
     margin-left: 30px;
+  }
+  .ion-ios-menu{
+    font-size: 36px;
+    width: 65px;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+
+  }
+
+  .menu_content_container{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    .ant-avatar{
+      background: $background;
+      border: 1px solid $border;
+    }
+    .menu_avatar_name{
+      font-size: 18px;
+      margin-left: 15px;
+
+    }
   }
 
   ul {
@@ -35,4 +58,36 @@
       }
     }
   }
+
+
+
+}
+
+
+
+
+@media screen and (max-width:900px) {
+  .site-navigation{
+    .menu_content_container{
+      width: 300px;
+      height:calc(100% - 65px) ;
+      background: white;
+      position: absolute;
+      top: 65px;
+      left: -300px;
+      transition:300ms ease left;
+
+      &.active{
+        left: 0px;
+      }
+
+
+
+
+      }
+    .ion-ios-menu{
+      display: flex;
+    }
+  }
+
 }
