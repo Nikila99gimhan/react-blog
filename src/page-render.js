@@ -1,22 +1,25 @@
-import React from "react";
-import { useRouteMatch } from "react-router-dom";
+import React from 'react'
+import {useRouteMatch} from 'react-router-dom'
 
-const generatePage = (page) => {
+const generatePage = page => {
+ const Component = () => require(`./pages/${page}`).default
+
+
+
   try {
-    const Component = require(`./pages/${page}`).default;
-    return <Component />;
+    return React.createElement(Component())
   } catch (err) {
-    console.warn(err);
-    return "Under Construction";
+    console.warn(err)
+    return React.createElement(() => 404)
   }
-};
+}
 
 const PageRenderer = () => {
   const {
-    params: { page },
-  } = useRouteMatch();
+    params: { page }
+  } = useRouteMatch()
 
-  return generatePage(page);
-};
+  return generatePage(page)
+}
 
-export default PageRenderer;
+export default PageRenderer
