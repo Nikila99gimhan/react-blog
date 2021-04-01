@@ -1,6 +1,5 @@
 import React from 'react'
 import {useRouteMatch} from 'react-router-dom'
-
 const generatePage = page => {
  const Component = () => require(`./pages/${page}`).default
 
