@@ -3,7 +3,7 @@
   width: 100%;
   background: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: $test-color;
 
   .menu_title {
@@ -13,27 +13,25 @@
     align-items: center;
     margin-left: 30px;
   }
-  .ion-ios-menu{
+  .ion-ios-menu {
     font-size: 36px;
     width: 65px;
     align-items: center;
     cursor: pointer;
     display: none;
-
   }
 
-  .menu_content_container{
+  .menu_content_container {
     display: flex;
     align-items: center;
     padding-right: 30px;
-    .ant-avatar{
+    .ant-avatar {
       background: $background;
       border: 1px solid $border;
     }
-    .menu_avatar_name{
+    .menu_avatar_name {
       font-size: 18px;
       margin-left: 15px;
-
     }
   }
 
@@ -43,10 +41,10 @@
     margin-block-end: 0;
     padding-inline-start: 0;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     list-style-type: none;
-    margin-right: 20px;
-
+    padding: 0 20px 0 50px;
     a {
       text-decoration: none;
       padding: 0 20px 0 20px;
@@ -58,36 +56,53 @@
       }
     }
   }
-
-
-
 }
 
-
-
-
-@media screen and (max-width:900px) {
-  .site-navigation{
-    .menu_content_container{
+@media screen and (max-width: 900px) {
+  .site-navigation {
+    .menu_content_container {
       width: 300px;
-      height:calc(100% - 65px) ;
+      height: calc(100% - 65px);
       background: white;
       position: absolute;
       top: 65px;
       left: -300px;
-      transition:300ms ease left;
+      transition: 300ms ease left;
+      flex-direction: column-reverse;
+      padding: 0;
+      padding-left: 30px;
 
-      &.active{
+      a {
+        width: 100%;
+        padding: 0;
+      }
+      li {
+        height: 65px;
+        display: flex;
+        align-items: center;
+      }
+
+      ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+        padding-top: 20px;
+      }
+      ul,
+      li,
+      .manu_avatar_container {
+        width: 100%;
+      }
+      .menu_content_container {
+        padding-top: 20px;
+      }
+
+      &.active {
         left: 0px;
       }
-
-
-
-
-      }
-    .ion-ios-menu{
+    }
+    .ion-ios-menu {
       display: flex;
     }
   }
-
 }
