@@ -6,7 +6,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import PageRenderer from './page-render'
+import PageRenderer from './page-render';
 
 function App() {
   const user ={
