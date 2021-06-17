@@ -1,4 +1,4 @@
-import moment from "moment";
+import moment from 'moment'
 
 export default [
     {
@@ -34,6 +34,6 @@ export default [
         date: moment().format('MMMM DD, YYYY'),
         categories: ['React', 'Vue'],
         link: '#',
-        image: 'reacrVv.png'
+        image: 'logo.png'
     },
 ]
