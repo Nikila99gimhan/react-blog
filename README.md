@@ -1,3 +1,9 @@
+#Home Page View
+
+![screencapture-localhost-3000-home-2021-06-18-16_35_01](https://user-images.githubusercontent.com/64256212/122551913-78bed000-cfea-11eb-914b-7b42c97c8b3a.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
