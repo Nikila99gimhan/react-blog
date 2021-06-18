@@ -1,7 +1,9 @@
 import React from "react";
 import trending from "../assets/mocks/trending";
-import {MasonryPost, PostMasonry} from '../components/common'
+import {MasonryPost, PostMasonry, PostGrid} from '../components/common'
 import featured from "../assets/mocks/featured";
+
+
 
 const trendingConfig ={
     1: {
@@ -28,8 +30,11 @@ const featuredConfig =  {
 const mergeStyles = function (posts,config) {
     posts.forEach((post, index) => {
         post.style = config[index]
+        post.author="Nikila"
+        post.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec congue risus. Suspendisse tincidunt orci vel odio pharetra mollis.'
     })
 }
+const recentPosts = [...trending, ...featured, ...featured]
 
 mergeStyles(trending ,trendingConfig)
 mergeStyles(featured , featuredConfig)
@@ -49,7 +54,15 @@ export default function Home () {
         </section>
             <section className={"container"}>
                 <div className={"row"}>
-                     <PostMasonry post={trending} columns={3} />
+                    <h1>Recent Posts</h1>
+                     <PostGrid posts={recentPosts} />
+
+                </div>
+            </section>
+
+            <section className={"container"}>
+                <div className={"row"}>
+                    <PostMasonry post={trending} columns={3} />
                 </div>
             </section>
         </main>
