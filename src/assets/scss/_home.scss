@@ -3,4 +3,21 @@
     width:100%;
     color: $test-color;
   }
+  .featured-posts-container{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    h1 {
+      margin: 5;
+      margin-block-start: 1.5em;
+      margin-block-end: 1.5em;
+    }
+
+    .featured-posts-container {
+      flex-direction: column;
+    }
+  }
 }
