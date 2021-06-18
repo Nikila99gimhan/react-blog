@@ -1,6 +1,7 @@
-#Home Page View
+# Home Page View
 
-![screencapture-localhost-3000-home-2021-06-18-16_35_01](https://user-images.githubusercontent.com/64256212/122551913-78bed000-cfea-11eb-914b-7b42c97c8b3a.png)
+![screencapture-localhost-3000-home-2021-06-18-23_33_17](https://user-images.githubusercontent.com/64256212/122600628-ebe53800-d024-11eb-898b-55e6fc5f76d5.png)
+
 
 
 
