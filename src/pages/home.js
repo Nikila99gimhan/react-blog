@@ -30,8 +30,8 @@ const featuredConfig =  {
 const mergeStyles = function (posts,config) {
     posts.forEach((post, index) => {
         post.style = config[index]
-        post.author="Nikila"
-        post.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec congue risus. Suspendisse tincidunt orci vel odio pharetra mollis.'
+        post.author="Nikila Gimhan"
+        post.description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec congue risus. Suspendisse tincidunt orci vel odio pharetra mollis. Quisque eu diam porta, placerat dui sed, bibendum justo. Nam eu porttitor felis. Sed convallis eros lacinia, scelerisque metus egestas, viverra nulla. Integer quam nisi, semper ac dictum a, ornare eget ex. Donec ipsum sapien, molestie eget tellus nec, dapibus pellentesque turpis. Vestibulum nec scelerisque risus. In sodales turpis dapibus'
     })
 }
 const recentPosts = [...trending, ...featured, ...featured]
