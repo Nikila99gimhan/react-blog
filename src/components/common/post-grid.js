@@ -16,7 +16,8 @@ export default function PostGrid ({posts}) {
 
 
         return posts.slice(firstIndex,lastIndex)
-    })
+
+    },[current,pageSize,posts])
 
     return(
         <section className={"grid-pagination-container"}>
