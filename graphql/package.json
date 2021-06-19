@@ -1,0 +1,17 @@
+{
+  "name": "react-blog-backend",
+  "version": "1.0.0",
+  "description": "A Koa GraphQl backend for React Blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Nikila Fernando",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-koa": "^2.25.1",
+    "graphql-tools": "^7.0.5",
+    "koa": "^2.13.1",
+    "moment": "^2.29.1"
+  }
+}
