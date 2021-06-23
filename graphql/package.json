@@ -10,9 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server-koa": "^2.25.1",
+    "dotenv": "^10.0.0",
     "graphql": "^15.5.1",
     "graphql-tools": "^7.0.5",
+    "knex": "^0.95.6",
     "koa": "^2.13.1",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "mysql2": "^2.2.5"
   }
 }
