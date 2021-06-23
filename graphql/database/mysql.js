@@ -5,8 +5,8 @@ let config = {
     connection: {
         host:process.env.MYSQL_HOST,
         user:process.env.MYSQL_USER,
-        database:process.env.MYSQL_PASS,
-        password:process.env.MYSQL_DB,
+        database:process.env.MYSQL_DB,
+        password:process.env.MYSQL_PASS,
         multipleStatements: true
     }
 }
